@@ -1,6 +1,8 @@
 # Variables, Expressions & Statements
 
-ab=input("enter hours: ")
-bc=input("enter rate: ")
-ca=float(ab) * float(bc)
-print("pay:",ca)
+hrs=input("enter hours: ")
+r=input("enter rate: ")
+Pay=float(hrs)*float(r)
+print("pay",Pay)
+
+

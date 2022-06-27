@@ -1,6 +1,13 @@
 # Network Programming
 # https://www.py4e.com/essons/network
-line='xyz pqr @reva.edu.in' 
-words=line.split()
-email=words[1]
-pieces=email.split('@')
+a=str(input('enter a string'))
+def reverse(a):
+  b=""
+  for i in a:
+   b=i+b
+  return b
+b=reverse(a)
+if a==b:
+  print('palindrome')
+else:
+  print('not palindrome')

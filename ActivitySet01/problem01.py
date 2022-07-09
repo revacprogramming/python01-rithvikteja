@@ -1,4 +1,4 @@
-#r="ActivitySet01/problem01.txt"
+#r="ActivitySet01/problem01.txt" 
 #a= open(r,"r")
 #print(a)
 #c=0
@@ -21,9 +21,19 @@
 #for line in fh:
  # liney=line.rstrip()
   #print(liney.upper())
-counts=dict()
-names=['csev','cwen','csev','zqian','cwen']
-for name in names:
-  counts[name]=counts.get(name,0)+1
-print(counts)  
-  
+#counts=dict()
+#names=['csev','cwen','csev','zqian','cwen']
+#for name in names:
+  #counts[name]=counts.get(name,0)+1
+#print(counts)  
+#word = 'brontosaurus'
+#d = dict()
+#for c in word:
+   # d[c] = d.get(c,0) + 1
+#print(d)
+import re
+hand=open('mbox-short.txt')
+for line in hand:
+  line=line.rstrip()
+  if re.search('From:',line):
+    print(line)

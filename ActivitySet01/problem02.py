@@ -1,11 +1,24 @@
-  # Why Program
-counts=dict()
-print('the clown ran after the car and the car ran into the tent and the tent fell down on the clown and the car')
-line=input('')
-words=line.split()
-print('Words:',words)
-print('counting...')
+
+
+txt = 'but soft what light in yonder window breaks'
+words = txt.split()
+
+t = list()
 for word in words:
-  counts[word]=counts.get(word,0)+1
-print('Counts',counts)  
-  
+    t.append((len(word), word))#add items to the previous list
+
+
+t.sort(reverse=True)
+ 
+
+res = list()
+for length, word in t:
+   res.append(word)
+print(res)
+
+
+t1=('apple','banana','cherry')
+print(t1)
+
+
+
